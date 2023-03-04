@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #191D2B;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #F26161; 
+    border-radius: 10px;
+  }
+.navbar{
+    margin: 50px 0px 0px 45%;
+    top: 0;
+    position: sticky;
+    
+}
+.home{
+    width:150px;
+    height: 150px;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 15px 15px;
+    background-color: #F26161 ;
+    color: #fff;
+    border-radius: 40px;    
+}
+#home{
+    margin-right: 10px;
+}
+.navbar .home:hover {
+    box-shadow: 0 0 5px 5px white;
+    transition: 0.5s;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.images{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.images img{
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.content{
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #fff;
+}
+.content h1{
+    margin: 20px 0px  0px 200px;
+    font-weight: 900;
+    font-family: 'Sigmar One', cursive;
+}
+.content h1 span{
+    color: #F26161;
+}
+.content h3{
+    margin: 40px 0px  0px 200px;
+    font-weight: 900;
+}
+.content marquee{
+        animation: blinker 1.5s linear infinite;
+        color:#F26161 ;
+        font-family: sans-serif;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+}
+.content h5{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 34px;
+    font-family: 'Satisfy', cursive;
+}
+
+/* .......... about page design ........ */
+.main_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 900px;
+    margin-left: 150px;
+}
+.main_about h1{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 65px;
+}
+.main_about h1{
+    margin: 50px 0px 0px 80px;
+}
+.main_about h1 span{
+    color: #F26161;
+}
+.main_about h3{
+    font-size: 35px;
+    margin: 0px 0px 0px 60px;
+}
+.main_about h3 span{
+    color: #F26161;
+}
+.main_about p{
+    text-align: justify;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.main_about .tool{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.all_tool{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+.all_tool h4{
+    border: 2px solid transparent;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+}
+.all_tool h4 span{
+    margin-right: 10px;
+}
+.all_tool #html_fa i{
+    color: #e06666;
+    font-size: 20px;
+}
+.all_tool #css_fa i{
+    font-size: 20px;
+    color: rgb(103, 189, 232);
+}
+.all_tool #js_fa i{
+    font-size: 20px;
+    color: rgb(214, 226, 111);
+}
+.all_tool #boostrap_fa i{
+    font-size: 20px;
+    color: rgb(43, 5, 124);
+}
+.all_tool #react_fa i{
+    font-size: 20px;
+    color: rgb(86, 159, 208);
+}
+
+/* ......... portfolio style ............ */
+
+#port{
+    color: #fff;
+    text-align: center;
+    margin: 60px;
+    font-size: 70px;
+}
+#port span{
+    color: #F26161;
+}
+#msg{
+    color: #fff;
+    text-align:center;
+    margin-top: 5px;
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+}
+.box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition-property: width,height;
+    transition-duration: 3s;
+    box-shadow: 0 0 4px 4px #8b8787;
+    border: 2px soid gray;
+    border-image: repeating-linear-gradient(45deg,#000, #000 1.5%, transparent 1.5%, transparent 5%) 80;
+}
+.box img:hover{
+    width: 350px;
+    height: 350px;
+    transition-property: width,height;
+    transition-duration: 2s;
+    
+    
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.form{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 50px 0px 0px 34%;
+}
+#send{
+    color: #fff;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+.form .box1{
+    width: 200px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #050505;
+    box-shadow: 4px 5px 5px 3px #FF6666;
+    border: 0;
+}
+.form .box2{
+    width: 422px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #050505;
+    box-shadow: 4px 5px 5px 3px #FF6666;
+    border: 0;
+}
+.form textarea{
+    width: 422px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #050505;
+    box-shadow: 4px 5px 5px 3px #FF6666;
+    border: 0;
+}
+.Submit{
+    background-color: #e06666;
+    color: #fff;
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 175px;
+}
+.details{
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+.details h6{
+    width: 310px;
+    line-height: 30px;
+}
+.details h6 i{
+    margin-right: 10px;
+}
+.details span i{
+    color:#e06666;
+}
+.details a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
